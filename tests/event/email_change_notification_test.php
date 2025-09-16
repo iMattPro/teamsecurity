@@ -17,7 +17,7 @@ class email_change_notification_test extends listener_base
 	 *
 	 * @return array Array of test data
 	 */
-	public function email_change_notification_data()
+	public static function email_change_notification_data()
 	{
 		return array(
 			array(

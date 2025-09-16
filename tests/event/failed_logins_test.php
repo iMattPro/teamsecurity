@@ -17,7 +17,7 @@ class failed_logins_test extends listener_base
 	 *
 	 * @return array Array of test data
 	 */
-	public function log_failed_login_attempts_data()
+	public static function log_failed_login_attempts_data()
 	{
 		return array(
 			array(true, true, array('user_row' => array('user_id' => 2))),
