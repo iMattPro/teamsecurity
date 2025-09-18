@@ -17,7 +17,7 @@ class team_passwords_test extends listener_base
 	 *
 	 * @return array Array of test data
 	 */
-	public function set_team_password_configs_data()
+	public static function set_team_password_configs_data()
 	{
 		return array(
 			array('core.acp_users_overview_before', 'reg_details',	array(), true, true, 30, 'PASS_TYPE_SYMBOL',),

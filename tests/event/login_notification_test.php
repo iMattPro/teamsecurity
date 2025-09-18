@@ -17,7 +17,7 @@ class login_notification_test extends listener_base
 	 *
 	 * @return array Array of test data
 	 */
-	public function acp_login_notification_data()
+	public static function acp_login_notification_data()
 	{
 		return array(
 			array(true, true, 'foo', '1:1:1', array(

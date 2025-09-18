@@ -17,7 +17,7 @@ class delete_log_security_test extends listener_base
 	 *
 	 * @return array Array of test data
 	 */
-	public function delete_logs_security_data()
+	public static function delete_logs_security_data()
 	{
 		return [
 			['admin', LOG_ADMIN, [], false],
