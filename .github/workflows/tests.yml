@@ -5,13 +5,13 @@ on:
         branches:        # Run tests when commits are pushed to these branches in your repo
             - main
             - master
-            - develop
+            - 3.3.x
             - dev/*
     pull_request:        # Run tests when pull requests are made on these branches in your repo
         branches:
             - main
             - master
-            - develop
+            - 3.3.x
             - dev/*
 
 jobs:
@@ -22,4 +22,4 @@ jobs:
             EXTNAME: phpbb/teamsecurity   # Your extension vendor/package name
             CODECOV: 1
         secrets:
-            CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }} # Do not change this    
+            CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }} # Do not change this
