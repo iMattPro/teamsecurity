@@ -195,7 +195,7 @@ class listener implements EventSubscriberInterface
 			return;
 		}
 
-		if ($this->in_watch_group($event['result']['user_row']['user_id']))
+		if (isset($event['result']['user_row']) && $this->in_watch_group($event['result']['user_row']['user_id']))
 		{
 			$this->log->add('user', $event['result']['user_row']['user_id'], $this->user->ip, 'LOG_TEAM_AUTH_FAIL', time(), array('reportee_id' => $event['result']['user_row']['user_id']));
 		}
